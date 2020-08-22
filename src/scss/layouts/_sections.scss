@@ -1,0 +1,59 @@
+/*=================================================================*/
+/*                      SECTIONS                             
+/*=================================================================*/
+
+section {
+  padding-top: 110px;
+  position: relative;
+
+  &.home {
+    background: $color-dark;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+
+    .intro {
+      margin: auto;
+      max-width: 540px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        color: $color-white;
+        font-size: $font-size-largest;
+      }
+
+      span {
+        color: $color-white;
+        font-size: $font-size-normal;
+      }
+    }
+
+    .social-icons {
+      li {
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.section-title {
+  font-size: $font-size-largest;
+  margin: 0;
+  margin-left: 14px;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url(../../images/dots-bg.svg);
+    display: block;
+    height: 37px;
+    left: -14px;
+    top: -14px;
+    position: absolute;
+    width: 37px;
+  }
+}

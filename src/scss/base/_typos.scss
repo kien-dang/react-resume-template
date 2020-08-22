@@ -1,0 +1,66 @@
+/*=================================================================*/
+/*                      TYPOGRAPHY                              
+/*=================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: #454360;
+  font-family: $font-family;
+  font-weight: $font-bold;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: $font-size-largest;
+}
+
+h2 {
+  font-size: $font-size-xx-large;
+}
+
+h3 {
+  font-size: $font-size-x-large;
+}
+
+h4 {
+  font-size: $font-size-larger;
+}
+
+a {
+  color: $color-primary;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: $color-dark;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+
+blockquote {
+  padding: 20px 20px;
+  margin: 0 0 20px;
+  font-size: $font-size-normal;
+  background: #F7F7F7;
+  border-radius: 10px;
+}
+
+blockquote p {
+  line-height: 1.6;
+}
+
+/* === Pre === */
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
