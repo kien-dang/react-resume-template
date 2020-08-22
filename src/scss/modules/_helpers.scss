@@ -1,0 +1,105 @@
+/*=================================================================*/
+/*                      HELPER                              
+/*=================================================================*/
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+@keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+
+.mouse-wrapper {
+  color: $color-white;
+  font-size: $font-size-smaller;
+  display: block;
+  max-width: 100px;
+  margin: auto;
+  text-align: center;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.mouse {
+  border: solid 2px $color-white;
+  border-radius: 16px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  height: 26px;
+  position: relative;
+  width: 20px;
+
+  .wheel {
+    background: $color-white;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 4px;
+    animation: ani-mouse 2s linear infinite;
+  }
+}
+
+.spacer {
+  clear: both;
+}
+
+.text-light {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-white;
+  }
+}

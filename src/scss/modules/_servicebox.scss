@@ -1,0 +1,19 @@
+/*=================================================================*/
+/*                      SERVICE                              
+/*=================================================================*/
+.service-box {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+
+  h3 {
+    font-size: 20px;
+  }
+
+  img {
+    margin-bottom: 22px;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
