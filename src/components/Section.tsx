@@ -1,0 +1,24 @@
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+
+interface Props {
+  id: string
+  title: string
+}
+
+export class Section extends React.Component<Props> {
+  render() {
+    return (
+      <section id={this.props.id}>
+        <Container>
+          <h2 className="section-title wow fadeInUp mb-5">{this.props.title}</h2>
+
+          {this.props.children}
+        </Container>
+      </section>
+    )
+  }
+}
+
+export default Section
