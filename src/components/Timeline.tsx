@@ -1,29 +1,29 @@
 import React from 'react'
 import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styled from 'styled-components'
+import styled, { StyledComponent } from 'styled-components'
 
 interface Props {
   time: string
   title: string
   icon: IconProp
+  left?: string
 }
-
-
-const IconBox = styled.div`
-  background: #fff;
-  font-size: 24px;
-  color: #ff4c60;
-  position: absolute;
-  left: -10px;
-  top: 0;
-  z-index: 1;
-  font-weight: 900;
-`
 
 export class Timeline extends React.Component<Props> {
   render() {
     const props = this.props
+
+    const IconBox = styled.div({
+      background: '#fff',
+      fontSize: '24px',
+      color: '#ff4c60',
+      position: 'absolute',
+      left: this.props.left ? this.props.left : '-10px',
+      top: 0,
+      zIndex: 1,
+      fontWeight: 900
+    })
 
     return (
       <div className="timeline-container wow fadeInUp">

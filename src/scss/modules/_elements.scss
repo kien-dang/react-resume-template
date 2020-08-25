@@ -36,22 +36,22 @@ $font-awesome: "Font Awesome 5 Free";
   //   }
   // }
 
-  &.exp {
-    .timeline-container {
-      &::after {
-        content: "\f0b1";
-        background: $color-white;
-        font-family: $font-awesome;
-        font-size: $font-size-x-large;
-        color: $color-primary;
-        position: absolute;
-        left: -7px;
-        top: 0;
-        z-index: 1;
-        font-weight: 900;
-      }
-    }
-  }
+  // &.exp {
+  //   .timeline-container {
+  //     &::after {
+  //       content: "\f0b1";
+  //       background: $color-white;
+  //       font-family: $font-awesome;
+  //       font-size: $font-size-x-large;
+  //       color: $color-primary;
+  //       position: absolute;
+  //       left: -7px;
+  //       top: 0;
+  //       z-index: 1;
+  //       font-weight: 900;
+  //     }
+  //   }
+  // }
   
   .content {
     position: relative;

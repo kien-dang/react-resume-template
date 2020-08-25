@@ -3,7 +3,8 @@ import { faNewspaper } from '@fortawesome/free-regular-svg-icons'
 import { 
   faTasks,
   faCoffee,
-  faGraduationCap
+  faGraduationCap,
+  faBriefcase
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, 
   faFacebook, 
@@ -21,6 +22,7 @@ library.add(
   faTasks,
   faCoffee,
   faGraduationCap,
+  faBriefcase,
 
   // Brands svg
   faGithub, 

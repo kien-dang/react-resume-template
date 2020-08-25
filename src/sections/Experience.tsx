@@ -6,24 +6,24 @@ import Timeline from '../components/Timeline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
-export class Education extends React.Component {
+export class Experience extends React.Component {
   render() {
 
     return (
-      <Section id="education" title="Education">
+      <Section id="experience" title="Experience">
         <Row>
           <Col md={12}>
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
 
-              <Timeline time="2019 - Present" title="Academic Degree" icon={["fas", "graduation-cap"]}>
+              <Timeline time="2019 - Present" title="Web Designer" icon={["fas", "briefcase"]} left="-7px">
+                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfect.</p>
+              </Timeline>
+
+              <Timeline time="2017 - 2013" title="Front-End Developer" icon={["fas", "briefcase"]} left="-7px">
                 <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
               </Timeline>
 
-              <Timeline time="2017 - 2013" title="Bachelor's Degree" icon={["fas", "graduation-cap"]}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-              </Timeline>
-
-              <Timeline time="2013 - 2009" title="Honours Degree" icon={["fas", "graduation-cap"]}>
+              <Timeline time="2013 - 2009" title="Back-End Developer" icon={["fas", "briefcase"]} left="-7px">
                 <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
               </Timeline>
 
@@ -36,4 +36,4 @@ export class Education extends React.Component {
   }
 }
 
-export default Education
+export default Experience

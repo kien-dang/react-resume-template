@@ -18,7 +18,7 @@ export class Home extends React.Component {
             <h1 className="mb-2 mt-0">kien.dang</h1>
 
             <span>
-              I'm a 
+              I'm a
               {" "}
               <TextLoop springConfig={{ stiffness: 180, damping: 10 }} interval={2000}>
                 <span>Microsoft .NET developer</span>
