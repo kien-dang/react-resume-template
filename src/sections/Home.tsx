@@ -28,11 +28,11 @@ export class Home extends React.Component {
             </span>
 
             <ul className="social-icons light list-inline mb-0 mt-4">
-              <li className="list-inline-item"><a href="#"><FontAwesomeIcon icon={["fab", "github"]} /></a></li>
-              <li className="list-inline-item"><a href="#"><FontAwesomeIcon icon={["fab", "facebook"]} /></a></li>
-              <li className="list-inline-item"><a href="#"><FontAwesomeIcon icon={["fab", "instagram"]} /></a></li>
-              <li className="list-inline-item"><a href="#"><FontAwesomeIcon icon={["fab", "twitter"]} /></a></li>
-              <li className="list-inline-item"><a href="#"><FontAwesomeIcon icon={["fab", "pinterest"]} /></a></li>
+              <li className="list-inline-item"><a href="https://github.com"><FontAwesomeIcon icon={["fab", "github"]} /></a></li>
+              <li className="list-inline-item"><a href="https://facebook.com"><FontAwesomeIcon icon={["fab", "facebook"]} /></a></li>
+              <li className="list-inline-item"><a href="https://instagram.com"><FontAwesomeIcon icon={["fab", "instagram"]} /></a></li>
+              <li className="list-inline-item"><a href="https://twitter.com"><FontAwesomeIcon icon={["fab", "twitter"]} /></a></li>
+              <li className="list-inline-item"><a href="https://pinterest.com"><FontAwesomeIcon icon={["fab", "pinterest"]} /></a></li>
             </ul>
 
             <div className="mt-4">
