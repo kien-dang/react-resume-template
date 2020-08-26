@@ -1,7 +1,7 @@
 import React from 'react'
-import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styled, { StyledComponent } from 'styled-components'
+import styled from 'styled-components'
 
 interface Props {
   time: string
