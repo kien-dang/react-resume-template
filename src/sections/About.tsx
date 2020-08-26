@@ -41,7 +41,7 @@ export class About extends React.Component {
         </Row>
 
         <Row className="mt-5">
-          <Counter className="col-md-3 col-sm-6" description="Open-source projects" count={26} icon={["fab", "osi"]} />
+          <Counter className="col-md-3 col-sm-6" description="Open-source projects" count={27} icon={["fab", "osi"]} />
           <Counter className="col-md-3 col-sm-6" description="Projects completed" count={59} icon={["fas", "tasks"]} />
           <Counter className="col-md-3 col-sm-6" description="Cup of coffee" count={3285} icon={["fas", "coffee"]} />
           <Counter className="col-md-3 col-sm-6" description="Publications" count={2} icon={["far", "newspaper"]} />
