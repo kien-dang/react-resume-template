@@ -1,8 +1,6 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Section from '../components/Section'
-import Timeline from '../components/Timeline'
+import { Row, Col } from 'react-bootstrap'
+import { Section, Timeline } from '../components'
 
 export class Education extends React.Component {
   render() {
