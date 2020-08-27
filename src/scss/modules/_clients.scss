@@ -1,0 +1,24 @@
+/*=================================================================*/
+/*                      CLIENTS                              
+/*=================================================================*/
+.knowledge {
+  min-height: 50px;
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+
+  .item {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  img {
+    display: inline-block;
+  }
+}
