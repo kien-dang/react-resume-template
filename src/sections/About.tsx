@@ -1,11 +1,7 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
+import { Row, Col, Button } from 'react-bootstrap'
+import { Skill, Counter, Section } from '../components'
 import AvatarWithPrimaryBackground from '../images/avatar-primary-bg.svg'
-import Skill from '../components/Skill'
-import Counter from '../components/Counter'
-import Section from '../components/Section'
 
 export class About extends React.Component {
   render() {
