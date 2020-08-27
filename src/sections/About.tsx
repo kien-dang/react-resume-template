@@ -9,7 +9,7 @@ export class About extends React.Component {
       <Section id="about" title="About Me">
         <Row>
           <Col md={3}>
-            <div className="text-center text-md-left">
+            <div className="text-center text-md-left mb-3">
               <img src={AvatarWithPrimaryBackground} alt="kiendang" style={{ width: "150px" }} />
             </div>
           </Col>
@@ -22,7 +22,7 @@ export class About extends React.Component {
                     developing, testing, and implementing webservices, microservices
                     and web-based applications.
                     </p>
-                  <div className="mt-3">
+                  <div className="mt-3 mb-3">
                     <Button variant="kd">Download CV</Button>
                   </div>
                 </Col>
@@ -37,9 +37,9 @@ export class About extends React.Component {
         </Row>
 
         <Row className="mt-5">
-          <Counter className="col-md-3 col-sm-6" description="Open-source projects" count={27} icon={["fab", "osi"]} />
-          <Counter className="col-md-3 col-sm-6" description="Projects completed" count={59} icon={["fas", "tasks"]} />
-          <Counter className="col-md-3 col-sm-6" description="Cup of coffee" count={3285} icon={["fas", "coffee"]} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Open-source projects" count={27} icon={["fab", "osi"]} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Projects completed" count={59} icon={["fas", "tasks"]} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Cup of coffee" count={3285} icon={["fas", "coffee"]} />
           <Counter className="col-md-3 col-sm-6" description="Publications" count={2} icon={["far", "newspaper"]} />
         </Row>
       </Section>

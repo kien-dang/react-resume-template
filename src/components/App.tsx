@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Home, Footer, About, Education, Experience, Services } from '../sections'
+import { Header, Home, Footer, About, Education, Experience, Services, Review } from '../sections'
 import { Row, Col, Container } from 'react-bootstrap'
 
 import '../components/Icons'
@@ -23,6 +23,7 @@ function App() {
           </Row>
         </Container>
         <Services />
+        <Review />
       </main>
       <p>&nbsp;</p>
       <p>&nbsp;</p>

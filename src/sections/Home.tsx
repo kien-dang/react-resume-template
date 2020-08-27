@@ -1,10 +1,9 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Avatar from '../images/avatar.svg'
+import { Container, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from 'react-bootstrap/Button'
 import ParticlesContainer from '../components/ParticlesContainer'
 import TextLoop from "react-text-loop"
+import Avatar from '../images/avatar.svg'
 
 export class Home extends React.Component {
   render() {
