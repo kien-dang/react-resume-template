@@ -11,7 +11,7 @@ export class Section extends React.Component<Props> {
     return (
       <section id={this.props.id}>
         <Container>
-          <h2 className="section-title wow fadeInUp mb-5">{this.props.title}</h2>
+          <h2 className="section-title mb-5">{this.props.title}</h2>
 
           {this.props.children}
         </Container>

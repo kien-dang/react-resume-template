@@ -26,6 +26,13 @@ export class Services extends React.Component {
             </ServiceBox>
           </Col>
         </Row>
+        <Row>
+          <Col md={12}>
+            <div className="mt-3 text-center">
+              <p className="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! <span role="img" aria-label="wave">👋</span></p>
+            </div>
+          </Col>
+        </Row>
       </Section>
     )
   }

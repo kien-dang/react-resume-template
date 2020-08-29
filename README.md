@@ -62,3 +62,5 @@ serve -s build
 - [node-sass](https://github.com/sass/node-sass)
 - [react-text-loop](https://github.com/braposo/react-text-loop)
 - [react-tsparticles](https://github.com/matteobruni/react-tsparticles)
+- [tslint](https://palantir.github.io/tslint/)
+- [react-slick](https://github.com/akiran/react-slick)

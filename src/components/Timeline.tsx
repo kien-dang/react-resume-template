@@ -26,7 +26,7 @@ export class Timeline extends React.Component<Props> {
     })
 
     return (
-      <div className="timeline-container wow fadeInUp">
+      <div className="timeline-container">
         <div className="content">
           <span className="time">{this.props.time}</span>
           <h3 className="title">{this.props.title}</h3>
