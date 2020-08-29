@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import logo from '../images/logo.svg'
 
 export class Header extends React.Component {
-  render() {
+  render () {
     return (
       <header className="kd-header fixed-top">
         <Container>

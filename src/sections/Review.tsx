@@ -1,9 +1,11 @@
 import React from 'react'
 
 export class Review extends React.Component {
-  render() {
+  render () {
     return (
-      <div></div>
+      <div>
+        <div />
+      </div>
     )
   }
 }

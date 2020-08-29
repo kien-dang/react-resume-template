@@ -11,7 +11,7 @@ interface Props {
 }
 
 export class Timeline extends React.Component<Props> {
-  render() {
+  render () {
     const props = this.props
 
     const IconBox = styled.div({

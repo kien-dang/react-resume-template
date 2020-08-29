@@ -1,11 +1,11 @@
 import React from 'react'
-import { Header, Home, Footer, About, Education, Experience, Services, Review } from '../sections'
+import { Header, Home, Footer, About, Education, Experience, Services, Review, Tools } from '../sections'
 import { Row, Col, Container } from 'react-bootstrap'
 
 import '../components/Icons'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App() {
+function App () {
   return (
     <>
       <Header />
@@ -24,13 +24,14 @@ function App() {
         </Container>
         <Services />
         <Review />
+        <Tools />
       </main>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <Footer />
     </>
-  );
+  )
 }
 
 export default App

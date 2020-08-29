@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import { Section, Timeline } from '../components'
 
 export class Experience extends React.Component {
-  render() {
+  render () {
 
     return (
       <Section id="experience" title="Experience">
@@ -11,19 +11,19 @@ export class Experience extends React.Component {
           <Col md={12}>
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
 
-              <Timeline time="2019 - Present" title="Web Designer" icon={["fas", "briefcase"]} left="-7px">
+              <Timeline time="2019 - Present" title="Web Designer" icon={['fas', 'briefcase']} left="-7px">
                 <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfect.</p>
               </Timeline>
 
-              <Timeline time="2017 - 2013" title="Front-End Developer" icon={["fas", "briefcase"]} left="-7px">
+              <Timeline time="2017 - 2013" title="Front-End Developer" icon={['fas', 'briefcase']} left="-7px">
                 <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
               </Timeline>
 
-              <Timeline time="2013 - 2009" title="Back-End Developer" icon={["fas", "briefcase"]} left="-7px">
+              <Timeline time="2013 - 2009" title="Back-End Developer" icon={['fas', 'briefcase']} left="-7px">
                 <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
               </Timeline>
 
-              <span className="line"></span>
+              <span className="line" />
             </div>
           </Col>
         </Row>

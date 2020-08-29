@@ -6,7 +6,7 @@ import development from '../images/service-2.svg'
 import photograph from '../images/service-3.svg'
 
 export class Services extends React.Component {
-  render() {
+  render () {
     return (
       <Section id="services" title="Services">
         <Row>

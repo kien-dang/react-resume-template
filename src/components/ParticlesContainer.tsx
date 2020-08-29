@@ -6,10 +6,10 @@ const particleStyle = {
   width: '100%',
   height: ' 100vh',
   top: 0
-};
+}
 
 export class ParticlesContainer extends React.Component {
-  render() {
+  render () {
     return (
       <>
         <Particles
@@ -18,70 +18,70 @@ export class ParticlesContainer extends React.Component {
           options={{
             fpsLimit: 60,
             interactivity: {
-              detectsOn: "canvas",
+              detectsOn: 'canvas',
               events: {
                 onClick: {
                   enable: true,
-                  mode: "push",
+                  mode: 'push'
                 },
                 onhover: {
                   enable: true,
-                  mode: "grab"
+                  mode: 'grab'
                 }
               },
               modes: {
                 push: {
-                  quantity: 1,
+                  quantity: 1
                 },
                 grab: {
                   distance: 200,
                   line_linked: {
                     opacity: 0.1
                   }
-                },
-              },
+                }
+              }
             },
             particles: {
               color: {
-                value: "#ffffff",
+                value: '#ffffff'
               },
               links: {
-                color: "#ffffff",
+                color: '#ffffff',
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
-                width: 1,
+                width: 1
               },
               collisions: {
-                enable: true,
+                enable: true
               },
               move: {
-                direction: "none",
+                direction: 'none',
                 enable: true,
-                outMode: "bounce",
+                outMode: 'bounce',
                 random: false,
                 speed: 1,
-                straight: false,
+                straight: false
               },
               number: {
                 density: {
                   enable: true,
-                  value_area: 800,
+                  value_area: 800
                 },
-                value: 20,
+                value: 20
               },
               opacity: {
-                value: 0.5,
+                value: 0.5
               },
               shape: {
-                type: "circle",
+                type: 'circle'
               },
               size: {
                 random: true,
-                value: 5,
-              },
+                value: 5
+              }
             },
-            detectRetina: true,
+            detectRetina: true
           }}
         />
       </>
