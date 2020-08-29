@@ -1,0 +1,18 @@
+{
+  "extends": ["tslint-config-standard", "tslint-react"],
+  "rulesDirectory": "./tslint-rules",
+  "rules": {
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "space-before-function-paren": false,
+    "space-before-function-paren-extended": [true, {
+      "anonymous": "always",
+      "asyncArrow": "always",
+      "constructor": "always",
+      "method": "always",
+      "named": "always",
+      "typeMethod": "never"
+    }]
+  }
+}

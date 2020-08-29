@@ -15,10 +15,10 @@ const Box = styled.div({
   float: 'left',
   color: '#dedeea',
   fontSize: '36px'
-});
+})
 
 export class Counter extends React.Component<Props> {
-  render() {
+  render () {
     const props = this.props
 
     return (
@@ -32,7 +32,7 @@ export class Counter extends React.Component<Props> {
             <p className="mb-0">{props.description}</p>
           </div>
         </div>
-        <div className="spacer d-md-none d-lg-none" data-height="30"></div>
+        <div className="spacer d-md-none d-lg-none" data-height="30" />
       </div>
     )
   }

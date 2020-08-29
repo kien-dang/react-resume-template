@@ -1,17 +1,17 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faNewspaper } from '@fortawesome/free-regular-svg-icons'
-import { 
+import {
   faTasks,
   faCoffee,
   faGraduationCap,
   faBriefcase
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, 
-  faFacebook, 
-  faInstagram, 
-  faTwitter, 
+import { faGithub,
+  faFacebook,
+  faInstagram,
+  faTwitter,
   faPinterest,
-  faOsi 
+  faOsi
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
@@ -25,10 +25,10 @@ library.add(
   faBriefcase,
 
   // Brands svg
-  faGithub, 
-  faFacebook, 
-  faInstagram, 
-  faTwitter, 
+  faGithub,
+  faFacebook,
+  faInstagram,
+  faTwitter,
   faPinterest,
   faOsi
 )

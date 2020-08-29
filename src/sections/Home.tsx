@@ -2,11 +2,11 @@ import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ParticlesContainer from '../components/ParticlesContainer'
-import TextLoop from "react-text-loop"
+import TextLoop from 'react-text-loop'
 import Avatar from '../images/avatar.svg'
 
 export class Home extends React.Component {
-  render() {
+  render () {
     return (
       <section id="home" className="home d-flex align-items-center">
         <ParticlesContainer />
@@ -18,7 +18,7 @@ export class Home extends React.Component {
 
             <span>
               I'm a
-              {" "}
+              {' '}
               <TextLoop springConfig={{ stiffness: 180, damping: 10 }} interval={2000}>
                 <span>Microsoft .NET developer</span>
                 <span>Front-End developer</span>
@@ -27,11 +27,11 @@ export class Home extends React.Component {
             </span>
 
             <ul className="social-icons light list-inline mb-0 mt-4">
-              <li className="list-inline-item"><a href="https://github.com"><FontAwesomeIcon icon={["fab", "github"]} /></a></li>
-              <li className="list-inline-item"><a href="https://facebook.com"><FontAwesomeIcon icon={["fab", "facebook"]} /></a></li>
-              <li className="list-inline-item"><a href="https://instagram.com"><FontAwesomeIcon icon={["fab", "instagram"]} /></a></li>
-              <li className="list-inline-item"><a href="https://twitter.com"><FontAwesomeIcon icon={["fab", "twitter"]} /></a></li>
-              <li className="list-inline-item"><a href="https://pinterest.com"><FontAwesomeIcon icon={["fab", "pinterest"]} /></a></li>
+              <li className="list-inline-item"><a href="https://github.com"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+              <li className="list-inline-item"><a href="https://facebook.com"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
+              <li className="list-inline-item"><a href="https://instagram.com"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></li>
+              <li className="list-inline-item"><a href="https://twitter.com"><FontAwesomeIcon icon={['fab', 'twitter']} /></a></li>
+              <li className="list-inline-item"><a href="https://pinterest.com"><FontAwesomeIcon icon={['fab', 'pinterest']} /></a></li>
             </ul>
 
             <div className="mt-4">
@@ -42,7 +42,7 @@ export class Home extends React.Component {
             <a href="#about" className="mouse-wrapper">
               <span>Scroll Down</span>
               <span className="mouse">
-                <span className="wheel"></span>
+                <span className="wheel" />
               </span>
             </a>
           </div>

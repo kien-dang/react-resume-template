@@ -4,13 +4,13 @@ import { Skill, Counter, Section } from '../components'
 import AvatarWithPrimaryBackground from '../images/avatar-primary-bg.svg'
 
 export class About extends React.Component {
-  render() {
+  render () {
     return (
       <Section id="about" title="About Me">
         <Row>
           <Col md={3}>
             <div className="text-center text-md-left mb-3">
-              <img src={AvatarWithPrimaryBackground} alt="kiendang" style={{ width: "150px" }} />
+              <img src={AvatarWithPrimaryBackground} alt="kiendang" style={{ width: '150px' }} />
             </div>
           </Col>
           <Col md={9} className="triangle-left-md triangle-top-sm">
@@ -37,10 +37,10 @@ export class About extends React.Component {
         </Row>
 
         <Row className="mt-5">
-          <Counter className="col-md-3 col-sm-6 mb-4" description="Open-source projects" count={27} icon={["fab", "osi"]} />
-          <Counter className="col-md-3 col-sm-6 mb-4" description="Projects completed" count={59} icon={["fas", "tasks"]} />
-          <Counter className="col-md-3 col-sm-6 mb-4" description="Cup of coffee" count={3285} icon={["fas", "coffee"]} />
-          <Counter className="col-md-3 col-sm-6" description="Publications" count={2} icon={["far", "newspaper"]} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Open-source projects" count={27} icon={['fab', 'osi']} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Projects completed" count={59} icon={['fas', 'tasks']} />
+          <Counter className="col-md-3 col-sm-6 mb-4" description="Cup of coffee" count={3285} icon={['fas', 'coffee']} />
+          <Counter className="col-md-3 col-sm-6" description="Publications" count={2} icon={['far', 'newspaper']} />
         </Row>
       </Section>
     )

@@ -7,7 +7,7 @@ interface Props {
 }
 
 export class Section extends React.Component<Props> {
-  render() {
+  render () {
     return (
       <section id={this.props.id}>
         <Container>

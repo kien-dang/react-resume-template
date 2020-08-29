@@ -8,11 +8,11 @@ interface Props {
 }
 
 export class Skill extends React.Component<Props> {
-  render() {
+  render () {
     const props = this.props
 
     const bgColor = props.backgroundColor ? props.backgroundColor : '#f1f1f1'
-    const ProgressBar = styled.div`    
+    const ProgressBar = styled.div`
       width: ${props.percent}%;
       background-color: ${bgColor};
     `
