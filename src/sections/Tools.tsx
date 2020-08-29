@@ -31,7 +31,7 @@ export class Tools extends React.Component {
           <Col md={3} xs={6}>
             <div className="knowledge">
               <div className="item">
-                <img src={DotNetCore} alt="client-name" />
+                <img src={TypeScript} alt="client-name" />
               </div>
             </div>
           </Col>
@@ -62,7 +62,7 @@ export class Tools extends React.Component {
           <Col md={3} xs={6}>
             <div className="knowledge">
               <div className="item">
-                <img src={TypeScript} alt="client-name" />
+                <img src={DotNetCore} alt="client-name" />
               </div>
             </div>
           </Col>

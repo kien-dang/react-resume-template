@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ParticlesContainer from '../components/ParticlesContainer'
 import TextLoop from 'react-text-loop'
 import Avatar from '../images/avatar.svg'
+import styled from 'styled-components'
+
+const Dot = styled.div({
+  color: '#ff4c60',
+  display: 'inline'
+})
 
 export class Home extends React.Component {
   render () {
@@ -14,7 +20,11 @@ export class Home extends React.Component {
           <div className="intro">
             <img src={Avatar} alt="kien dang" className="mb-4" />
 
-            <h1 className="mb-2 mt-0">kien.dang</h1>
+            <h1 className="mb-2 mt-0">
+              kien
+              <Dot>.</Dot>
+              dang
+            </h1>
 
             <span>
               I'm a

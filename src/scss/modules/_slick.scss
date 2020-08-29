@@ -1,0 +1,145 @@
+
+
+/*=================================================================*/
+/*                      SLICK SETTINGS
+/*=================================================================*/
+.slick-slide {
+  height: auto;
+  outline: none;
+
+  img {
+    display: inline;
+  }
+}
+
+.slick-next, .slick-prev {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: $color-dark;
+  border-radius: 0;
+  top: calc(50% - 40px);
+  z-index: 1;
+  transform: translateX(0px);
+
+  &:hover, &:focus{
+    background: $color-dark;
+  }
+}
+
+.slick-prev {
+  left: 0;
+  &:hover {
+    background: $color-dark;
+  }
+
+  &:before, &:after {
+    left: 17px;
+  }
+
+  &:before {
+    content: "";
+    background: $color-white;
+    display: block;
+    width: 1px;
+    height: 14px;
+    top: 8px;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    content: "";
+    background: $color-white;
+    display: block;
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    top: 17px;
+    transform: rotate(135deg);
+  }
+}
+
+.slick-next {
+  right: 0;
+
+  &:hover {
+    background: $color-dark;
+  }
+
+  &:before, &:after {
+    left: 20px;
+  }
+
+  &:before {
+    content: "";
+    background: $color-white;
+    display: block;
+    width: 1px;
+    height: 14px;
+    top: 8px;
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    content: "";
+    background: $color-white;
+    display: block;
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    top: 17px;
+    transform: rotate(45deg);
+  }
+}
+
+.slick-dotted {
+  &.slick-slider {
+    margin-bottom: 0;
+  }
+}
+
+.slick-dots {
+  position: relative;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+
+  li {
+    width: 10px;
+    height: 6px;
+    margin: 0 5px;
+
+    &.slick-active {
+      width: 20px;
+      height: 6px;
+
+      button {
+        &:before {
+          background: $color-primary;
+          border-radius: 3px;
+          opacity: 1;
+          height: 6px;
+          width: 20px;
+        }
+      }
+    }
+
+    button {
+      width: 10px;
+      height: 6px;
+      padding: 0;
+
+      &:before {
+        content: "";
+        background: #D4D4FF;
+        border-radius: 3px;
+        opacity: 1;
+        height: 6px;
+        width: 10px;
+      }
+    }
+  }
+}
