@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, Home, Footer, About, Education, Experience, Services, Review, Tools, Contact } from '../sections'
 import { Row, Col, Container } from 'react-bootstrap'
+import ScrollTopArrow from './ScrollTopArrow'
 
 import '../components/Icons'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -28,6 +29,7 @@ function App () {
         <Contact />
       </main>
       <Footer />
+      <ScrollTopArrow />
     </>
   )
 }

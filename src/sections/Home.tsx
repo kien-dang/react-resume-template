@@ -5,6 +5,7 @@ import ParticlesContainer from '../components/ParticlesContainer'
 import TextLoop from 'react-text-loop'
 import Avatar from '../images/avatar.svg'
 import styled from 'styled-components'
+import { Scroller } from '../components'
 
 const Dot = styled.div({
   color: '#ff4c60',
@@ -49,12 +50,12 @@ export class Home extends React.Component {
             </div>
           </div>
           <div className="scroll-down">
-            <a href="#about" className="mouse-wrapper">
+            <Scroller href="#about" className="mouse-wrapper">
               <span>Scroll Down</span>
               <span className="mouse">
                 <span className="wheel" />
               </span>
-            </a>
+            </Scroller>
           </div>
         </Container>
       </section>

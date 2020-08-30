@@ -174,3 +174,35 @@ $font-awesome: "Font Awesome 5 Free";
     font-size: $font-size-normal;
   }
 }
+
+/* === Go to Top === */
+#return-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  border-radius: 100%;
+  display: none;
+  z-index: 4;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    color: $color-white;
+    margin: 0;
+    position: relative;
+    left: 13px;
+    top: 8px;
+    font-size: 16px;
+    transform: translateY(0px);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    background: $color-primary;
+  }
+}
