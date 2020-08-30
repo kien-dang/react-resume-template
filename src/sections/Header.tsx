@@ -1,4 +1,5 @@
 import React from 'react'
+import { Scroller } from '../components'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import logo from '../images/logo.svg'
 
@@ -15,19 +16,22 @@ export class Header extends React.Component {
             <Navbar.Collapse id="navbarNavDropdown">
               <Nav className="ml-auto" as="ul">
                 <Nav.Item as="li">
-                  <Nav.Link href="#home">Home</Nav.Link>
+                  <Scroller href="#home" className="nav-link">Home</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Nav.Link href="#about">About</Nav.Link>
+                  <Scroller href="#about" className="nav-link">About</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Nav.Link href="#education">Education</Nav.Link>
+                  <Scroller href="#education" className="nav-link">Education</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Nav.Link href="#experience">Experience</Nav.Link>
+                  <Scroller href="#experience" className="nav-link">Experience</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  <Scroller href="#recommendations" className="nav-link">Recommendations</Scroller>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Scroller href="#contact" className="nav-link">Contact</Scroller>
                 </Nav.Item>
               </Nav>
             </Navbar.Collapse>

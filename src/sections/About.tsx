@@ -21,7 +21,7 @@ export class About extends React.Component {
                     I am kiendang, a Microsoft .NET developer with more than 5 years of experience in
                     developing, testing, and implementing webservices, microservices
                     and web-based applications.
-                    </p>
+                  </p>
                   <div className="mt-3 mb-3">
                     <Button variant="kd">Download CV</Button>
                   </div>
