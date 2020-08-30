@@ -4,7 +4,8 @@ import {
   faTasks,
   faCoffee,
   faGraduationCap,
-  faBriefcase
+  faBriefcase,
+  faArrowUp
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub,
   faFacebook,
@@ -23,6 +24,7 @@ library.add(
   faCoffee,
   faGraduationCap,
   faBriefcase,
+  faArrowUp,
 
   // Brands svg
   faGithub,
