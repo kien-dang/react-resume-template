@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import VisibilitySensor from 'react-visibility-sensor'
 
 interface Props {
   title: string
@@ -7,13 +8,35 @@ interface Props {
   backgroundColor?: string
 }
 
-export class Skill extends React.Component<Props> {
+interface State {
+  displayPercent: number
+}
+
+export class Skill extends React.Component<Props, State> {
+  constructor (props: Props) {
+    super(props)
+
+    this.state = {
+      displayPercent: 0
+    }
+  }
+
+  onChange = (isVisible: boolean) => {
+    console.log(isVisible)
+
+    if (isVisible) {
+      this.setState({
+        displayPercent: this.props.percent
+      })
+    }
+  }
+
   render () {
     const props = this.props
 
     const bgColor = props.backgroundColor ? props.backgroundColor : '#f1f1f1'
     const ProgressBar = styled.div`
-      width: ${props.percent}%;
+      width: ${this.state.displayPercent}%;
       background-color: ${bgColor};
     `
 
@@ -24,7 +47,10 @@ export class Skill extends React.Component<Props> {
           <span className="float-right">{`${props.percent}%`}</span>
         </div>
         <div className="progress">
-          <ProgressBar className="progress-bar data-background" />
+          <VisibilitySensor onChange={this.onChange} delayedCall>
+            <div className="progress-bar data-background" style={{ width: `${this.state.displayPercent}%`, backgroundColor: `${bgColor}` }} />
+            {/* <ProgressBar className="progress-bar data-background" /> */}
+          </VisibilitySensor>
         </div>
       </div>
     )
