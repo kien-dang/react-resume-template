@@ -2,8 +2,8 @@ import React from 'react'
 import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
+import TrackVisibility from 'react-on-screen'
 import CountUp from 'react-countup'
-import VisibilitySensor from 'react-visibility-sensor'
 
 interface Props {
   className?: string
@@ -20,6 +20,7 @@ const Box = styled.div({
 })
 
 export class Counter extends React.Component<Props> {
+
   render () {
     const props = this.props
 
@@ -32,13 +33,9 @@ export class Counter extends React.Component<Props> {
           <div className="details">
             <h3 className="mb-0 mt-0 number">
               <em className="count">
-                <CountUp end={props.count}>
-                  {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                      <span ref={countUpRef} />
-                    </VisibilitySensor>
-                  )}
-                </CountUp>
+                <TrackVisibility once>
+                  { ({ isVisible }) => isVisible && <CountUp end={props.count} /> }
+                </TrackVisibility>
               </em>
             </h3>
             <p className="mb-0">{props.description}</p>
