@@ -2,8 +2,8 @@ import React from 'react'
 import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
-import TrackVisibility from 'react-on-screen'
 import CountUp from 'react-countup'
+import VisibilitySensor from 'react-visibility-sensor'
 
 interface Props {
   className?: string
@@ -13,13 +13,32 @@ interface Props {
   iconSize?: SizeProp
 }
 
+interface State {
+  loaded: boolean
+}
+
 const Box = styled.div({
   float: 'left',
   color: '#dedeea',
   fontSize: '36px'
 })
 
-export class Counter extends React.Component<Props> {
+export class Counter extends React.Component<Props, State> {
+  constructor (props: Props) {
+    super(props)
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+  onChange = (isVisible: boolean) => {
+    if (isVisible && !this.state.loaded) {
+      this.setState({
+        loaded: true
+      })
+    }
+  }
 
   render () {
     const props = this.props
@@ -33,9 +52,9 @@ export class Counter extends React.Component<Props> {
           <div className="details">
             <h3 className="mb-0 mt-0 number">
               <em className="count">
-                <TrackVisibility once>
-                  { ({ isVisible }) => isVisible && <CountUp end={props.count} /> }
-                </TrackVisibility>
+              <VisibilitySensor onChange={this.onChange} delayedCall >
+                <CountUp start={0} end={this.state.loaded ? props.count : 0} />
+              </VisibilitySensor>
               </em>
             </h3>
             <p className="mb-0">{props.description}</p>
