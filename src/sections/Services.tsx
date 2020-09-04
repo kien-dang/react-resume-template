@@ -5,25 +5,33 @@ import design from '../images/service-1.svg'
 import development from '../images/service-2.svg'
 import photograph from '../images/service-3.svg'
 
+const Pulse = require('react-reveal/Pulse')
+
 export class Services extends React.Component {
   render () {
     return (
       <Section id="services" title="Services">
         <Row>
           <Col md={4}>
-            <ServiceBox title="UI/UX design" image={design} backgroundColor="rgb(108, 108, 229)">
-              <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-            </ServiceBox>
+            <Pulse>
+              <ServiceBox title="UI/UX design" image={design} backgroundColor="rgb(108, 108, 229)">
+                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
+              </ServiceBox>
+            </Pulse>
           </Col>
           <Col md={4}>
-            <ServiceBox title="Web Development" image={development} backgroundColor="rgb(249, 215, 76)">
-              <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-            </ServiceBox>
+            <Pulse delay={1000}>
+              <ServiceBox title="Web Development" image={development} backgroundColor="rgb(249, 215, 76)">
+                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
+              </ServiceBox>
+            </Pulse>
           </Col>
           <Col md={4}>
-            <ServiceBox title="Photography" image={photograph} backgroundColor="rgb(249, 123, 139)">
-              <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-            </ServiceBox>
+            <Pulse delay={2000}>
+              <ServiceBox title="Photography" image={photograph} backgroundColor="rgb(249, 123, 139)">
+                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
+              </ServiceBox>
+            </Pulse>
           </Col>
         </Row>
         <Row>
