@@ -11,16 +11,25 @@ export class Education extends React.Component {
           <Col md={12}>
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
 
-              <Timeline time="2019 - Present" title="Academic Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+              <Timeline time="2017 – 2018" title="Queensland University of Technology" icon={['fas', 'graduation-cap']}>
+                <p>Master of Information Technology (Data Science)</p>
               </Timeline>
 
-              <Timeline time="2017 - 2013" title="Bachelor's Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+              <Timeline time="2014 – 2015" title="Arena Multimedia" icon={['fas', 'graduation-cap']}>
+                <p>Certificate in Multimedia (Graphics, Web Design &amp; Development certificate)</p>
               </Timeline>
 
-              <Timeline time="2013 - 2009" title="Honours Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+              <Timeline time="2009 – 2011" title="The University of Greenwich" icon={['fas', 'graduation-cap']}>
+                <p>Bachelor of Science Computing (Computer Science)</p>
+              </Timeline>
+
+              <Timeline time="2007 – 2009" title="Aptech Computer Education" icon={['fas', 'graduation-cap']}>
+                <p>Higher Diploma in Software Engineering</p>
+              </Timeline>
+
+              <Timeline time="2006 – 2007" title="Aptech Computer Education" icon={['fas', 'graduation-cap']}>
+                <p>Diploma in Information System Management</p>
+                <p>&nbsp;</p>
               </Timeline>
 
               <span className="line" />
