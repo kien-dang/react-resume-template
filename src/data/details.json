@@ -1,0 +1,20 @@
+{
+  "firstName": "kien",
+  "middleName": ".",
+  "lastName": "dang",
+  "titles": [
+    "Microsoft .NET developer",
+    "Front-End developer",
+    "Data scientist"
+  ],
+  "socialNetworks": [
+    {
+      "link": "https://github.com/kien-dang/react-resume-template",
+      "iconName": "faGithub"
+    },
+    {
+      "link": "https://www.linkedin.com/in/trung-kien-dang",
+      "iconName": "faLinkedin"
+    }
+  ]
+}

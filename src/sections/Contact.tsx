@@ -11,7 +11,7 @@ export class Contact extends React.Component {
             <div className="contact-info">
               <h3>Let's talk about everything!</h3>
               <p>
-                Don't like forms? Send me an <a href="mailto:name@example.com">email</a>.
+                Send me an <a href="mailto:jobs@kiendang.com">email</a>.
                 <span role="img" aria-label="wave">👋</span>
               </p>
             </div>

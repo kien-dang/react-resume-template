@@ -7,13 +7,7 @@ import {
   faBriefcase,
   faArrowUp
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub,
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faPinterest,
-  faOsi
-} from '@fortawesome/free-brands-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   // Regular svg
@@ -27,10 +21,5 @@ library.add(
   faArrowUp,
 
   // Brands svg
-  faGithub,
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faPinterest,
-  faOsi
+  fab
 )
