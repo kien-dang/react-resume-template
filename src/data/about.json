@@ -1,0 +1,53 @@
+{
+  "username": "kien dang",
+  "objective": "<p>I am a Microsoft .NET developer with more than 5 years of experience in developing, testing, and implementing webservices, microservices and web-based applications using Microsoft technologies, MS SQL Server, scheduled tasks, TFS and Azure services. <\/p> <p> I am ambitious and hardworking, innovative and creative, very flexible and adaptable. I am also a quick learner and master new technologies with ease; reliable team player as well as an independent individual. <\/p>",
+  "resumeUrl": "#",
+  "skills": [
+    {
+      "name": ".NET Core",
+      "confidence": 95,
+      "color": "rgb(255, 209, 92)"
+    },
+    {
+      "name": "NoSQL",
+      "confidence": 85,
+      "color": "rgb(108, 108, 229)"
+    },
+    {
+      "name": "TypeScript",
+      "confidence": 80,
+      "color": "rgb(255, 76, 96)"
+    },
+    {
+      "name": "GraphQL",
+      "confidence": 90,
+      "color": "rgb(51, 105, 30)"
+    }
+  ],
+  "statistics": [
+    {
+      "number": 28,
+      "title": "Open-source projects",
+      "iconPrefix": "fab",
+      "iconName": "osi"
+    },
+    {
+      "number": 59,
+      "title": "Projects completed",
+      "iconPrefix": "fas",
+      "iconName": "tasks"
+    },
+    {
+      "number": 3285,
+      "title": "Cup of coffee",
+      "iconPrefix": "fas",
+      "iconName": "coffee"
+    },
+    {
+      "number": 2,
+      "title": "Publications",
+      "iconPrefix": "far",
+      "iconName": "newspaper"
+    }
+  ]
+}
