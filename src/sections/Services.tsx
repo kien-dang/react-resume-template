@@ -1,9 +1,6 @@
 import React from 'react'
 import { Section, ServiceBox } from '../components'
 import { Row, Col } from 'react-bootstrap'
-import design from '../images/service-1.svg'
-import development from '../images/service-2.svg'
-import photograph from '../images/service-3.svg'
 
 const Pulse = require('react-reveal/Pulse')
 
@@ -14,21 +11,21 @@ export class Services extends React.Component {
         <Row>
           <Col md={4}>
             <Pulse>
-              <ServiceBox title="UI/UX design" image={design} backgroundColor="rgb(108, 108, 229)">
+              <ServiceBox title="UI/UX design" image={require('../images/service-1.svg')} backgroundColor="rgb(108, 108, 229)">
                 <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
               </ServiceBox>
             </Pulse>
           </Col>
           <Col md={4}>
             <Pulse delay={1000}>
-              <ServiceBox title="Web Development" image={development} backgroundColor="rgb(249, 215, 76)">
+              <ServiceBox title="Web Development" image={require('../images/service-2.svg')} backgroundColor="rgb(249, 215, 76)">
                 <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
               </ServiceBox>
             </Pulse>
           </Col>
           <Col md={4}>
             <Pulse delay={2000}>
-              <ServiceBox title="Photography" image={photograph} backgroundColor="rgb(249, 123, 139)">
+              <ServiceBox title="Photography" image={require('../images/service-3.svg')} backgroundColor="rgb(249, 123, 139)">
                 <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
               </ServiceBox>
             </Pulse>
