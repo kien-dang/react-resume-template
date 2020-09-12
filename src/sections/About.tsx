@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Row, Col, Button } from 'react-bootstrap'
 import { Skill, Counter, Section } from '../components'
-import AvatarWithPrimaryBackground from '../images/avatar-primary-bg.svg'
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core'
 import about from '../data/about.json'
 
@@ -19,7 +18,7 @@ export class About extends React.Component {
             <Row>
               <Col md={12}>
                 <div className="text-center mb-3">
-                  <img src={AvatarWithPrimaryBackground} alt="kiendang" style={{ width: '150px' }} />
+                  <img src={require('../images/avatar-primary-bg.svg')} alt="kiendang" style={{ width: '150px' }} />
                 </div>
               </Col>
               <Col md={12}>

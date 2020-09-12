@@ -4,8 +4,6 @@ import { Row, Col } from 'react-bootstrap'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import Avatar from '../images/avatar.svg'
-import AvatarWithPrimaryBackground from '../images/avatar-primary-bg.svg'
 
 export class Recommendations extends React.Component {
   render () {
@@ -27,7 +25,7 @@ export class Recommendations extends React.Component {
               <div className="slick-slide">
                 <div className="text-center mx-auto">
                   <div className="mb-3 mx-auto">
-                    <img src={Avatar} alt="Sam Collins" />
+                    <img src={require('../images/avatar.svg')} alt="Sam Collins" />
                   </div>
                   <h4 className="mt-3 mb-0">Sam Collins</h4>
                   <span className="subtitle">Team Leader and Project Manager at Locatrix</span>
@@ -43,7 +41,7 @@ export class Recommendations extends React.Component {
               <div className="slick-slide">
                 <div className="text-center mx-auto">
                   <div className="mb-3 mx-auto">
-                    <img src={AvatarWithPrimaryBackground} alt="Simon Sanderson" />
+                    <img src={require('../images/avatar-primary-bg.svg')} alt="Simon Sanderson" />
                   </div>
                   <h4 className="mt-3 mb-0">Simon Sanderson</h4>
                   <span className="subtitle">Software Specialist at Locatrix</span>
@@ -59,7 +57,7 @@ export class Recommendations extends React.Component {
               <div className="slick-slide">
                 <div className="text-center mx-auto">
                   <div className="mb-3 mx-auto">
-                    <img src={AvatarWithPrimaryBackground} alt="Praneil Raniga" />
+                    <img src={require('../images/avatar.svg')} alt="Praneil Raniga" />
                   </div>
                   <h4 className="mt-3 mb-0">Praneil Raniga</h4>
                   <span className="subtitle">Senior Recruitment and Operations Consultant at PRA</span>
