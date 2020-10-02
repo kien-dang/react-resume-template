@@ -1,0 +1,22 @@
+{
+    "recommendations": [
+        {                
+            "name": "Sam Collins",
+            "avatar": "\/images\/avatar.svg",
+            "jobTitle": "Team Leader and Project Manager at Locatrix",
+            "recommendation": "I had the pleasure of working with Kien for a little over a year — he was hard working, passionate about quality software engineering and an exceptional problem solver. There was no task too difficult for Kien, and he continued to impress with great solutions to hard problems."
+        },
+        {                
+            "name": "Simon Sanderson",
+            "avatar": "\/images\/avatar-primary-bg.svg",
+            "jobTitle": "Software Specialist at Locatrix",
+            "recommendation": "I had the pleasure of working with Kien for a year and in that time he impressed me greatly with his ability to pick up anything that was asked of him. He definitely punched above his weight and is a natural. I'd recommend him to anyone and would happily provide a reference for him. He has a great attitude and always tries to please."
+        },
+        {                
+            "name": "Praneil Raniga",
+            "avatar": "\/images\/avatar.svg",
+            "jobTitle": "Senior Recruitment and Operations Consultant at PRA",
+            "recommendation": "I've worked with and placed Kien with one of my clients, receiving positive feedback on his work and ethics. He is polite, hardworking, enjoys solving problems and learning! It's been great working with him, and assisting him in finding his next job opportunity."
+        }
+    ]
+}

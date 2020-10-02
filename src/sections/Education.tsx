@@ -1,6 +1,9 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { Section, Timeline } from '../components'
+import history from '../data/history.json'
+
+const education = history.education
 
 export class Education extends React.Component {
   render () {
@@ -11,17 +14,12 @@ export class Education extends React.Component {
           <Col md={12}>
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
 
-              <Timeline time="2019 - Present" title="Academic Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+              { education.map(e => (
+                <Timeline key={e.degree} time={e.period} title={e.school} icon={['fas', 'graduation-cap']}>
+                  <p>{e.degree}</p>
+                  <div dangerouslySetInnerHTML={ { __html: e.description } } />
               </Timeline>
-
-              <Timeline time="2017 - 2013" title="Bachelor's Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-              </Timeline>
-
-              <Timeline time="2013 - 2009" title="Honours Degree" icon={['fas', 'graduation-cap']}>
-                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-              </Timeline>
+              ))}
 
               <span className="line" />
             </div>

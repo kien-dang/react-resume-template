@@ -1,7 +1,21 @@
 import React from 'react'
 import { Scroller } from '../components'
 import { Container, Navbar, Nav } from 'react-bootstrap'
-import logo from '../images/logo.svg'
+import styled from 'styled-components'
+import details from '../data/details.json'
+
+const Logo = styled.span({
+  color: '#fff',
+  fontSize: '36px',
+  fontFamily: 'Rubik, sans-serif',
+  fontWeight: 700,
+  lineHeight: '36px'
+})
+
+const Dot = styled.span({
+  color: '#ff4c60',
+  display: 'inline'
+})
 
 export class Header extends React.Component {
   render () {
@@ -10,7 +24,11 @@ export class Header extends React.Component {
         <Container>
           <Navbar expand="lg" variant="dark">
             <Navbar.Brand href="#">
-              <img src={logo} alt="Kien Dang" />
+              <Logo>
+                {details.firstName}
+                <Dot>{details.middleName}</Dot>
+                {details.lastName}
+              </Logo>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarNavDropdown" />
             <Navbar.Collapse id="navbarNavDropdown">
@@ -22,10 +40,7 @@ export class Header extends React.Component {
                   <Scroller href="#about" className="nav-link">About</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Scroller href="#education" className="nav-link">Education</Scroller>
-                </Nav.Item>
-                <Nav.Item as="li">
-                  <Scroller href="#experience" className="nav-link">Experience</Scroller>
+                  <Scroller href="#education" className="nav-link">Education &amp; Experience</Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Scroller href="#recommendations" className="nav-link">Recommendations</Scroller>
