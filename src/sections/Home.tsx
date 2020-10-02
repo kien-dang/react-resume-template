@@ -5,8 +5,8 @@ import ParticlesContainer from '../components/ParticlesContainer'
 import TextLoop from 'react-text-loop'
 import styled from 'styled-components'
 import { Scroller } from '../components'
-import details from '../data/details.json'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import details from '../data/details.json'
 
 const Dot = styled.div({
   color: '#ff4c60',
@@ -20,7 +20,7 @@ export class Home extends React.Component {
         <ParticlesContainer />
         <Container>
           <div className="intro">
-            <img src={require('../images/avatar.svg')} alt="kien dang" className="mb-4" />
+            <img src={details.avatar} alt="kien dang" className="mb-4" />
 
             <h1 className="mb-2 mt-0">
               {details.firstName}
