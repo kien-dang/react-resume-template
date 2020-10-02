@@ -1,0 +1,26 @@
+{
+    "customContent": "Looking for custom jobs? <a href=\"#contact\">Click here<\/a> to contact me! <span role=\"img\" aria-label=\"wave\">👋<\/span>",
+    "services": [
+        {
+            "title": "UI/UX design",
+            "photo": "\/images\/service-1.svg",
+            "backgroundColor": "rgb(108, 108, 229)",
+            "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+            "delay": 0
+        },
+        {
+            "title": "Web Development",
+            "photo": "\/images\/service-2.svg",
+            "backgroundColor": "rgb(249, 215, 76)",
+            "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+            "delay": 1000
+        },
+        {
+            "title": "Photography",
+            "photo": "\/images\/service-3.svg",
+            "backgroundColor": "rgb(249, 123, 139)",
+            "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+            "delay": 2000
+        }
+    ]
+}

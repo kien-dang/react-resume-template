@@ -1,6 +1,7 @@
 import React from 'react'
 import { Section } from '../components'
 import { Row, Col, Button, Form } from 'react-bootstrap'
+import contact from '../data/contact.json'
 
 export class Contact extends React.Component {
   render () {
@@ -9,11 +10,8 @@ export class Contact extends React.Component {
         <Row>
           <Col md={4}>
             <div className="contact-info">
-              <h3>Let's talk about everything!</h3>
-              <p>
-                Send me an <a href="mailto:jobs@kiendang.com">email</a>.
-                <span role="img" aria-label="wave">👋</span>
-              </p>
+              <h3>{contact.title}</h3>
+              <div dangerouslySetInnerHTML={ { __html: contact.subTitle } } />
             </div>
           </Col>
           <Col md={8}>

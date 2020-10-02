@@ -1,6 +1,9 @@
 import React from 'react'
 import { Section, ServiceBox } from '../components'
 import { Row, Col } from 'react-bootstrap'
+import ServiceConfig from '../data/services.json'
+
+const services = ServiceConfig.services
 
 const Pulse = require('react-reveal/Pulse')
 
@@ -9,32 +12,20 @@ export class Services extends React.Component {
     return (
       <Section id="services" title="Services">
         <Row>
-          <Col md={4}>
-            <Pulse>
-              <ServiceBox title="UI/UX design" image={require('../images/service-1.svg')} backgroundColor="rgb(108, 108, 229)">
-                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-              </ServiceBox>
-            </Pulse>
-          </Col>
-          <Col md={4}>
-            <Pulse delay={1000}>
-              <ServiceBox title="Web Development" image={require('../images/service-2.svg')} backgroundColor="rgb(249, 215, 76)">
-                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-              </ServiceBox>
-            </Pulse>
-          </Col>
-          <Col md={4}>
-            <Pulse delay={2000}>
-              <ServiceBox title="Photography" image={require('../images/service-3.svg')} backgroundColor="rgb(249, 123, 139)">
-                <p className="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-              </ServiceBox>
-            </Pulse>
-          </Col>
+          { services.map(s => (
+            <Col md={4} key={s.title}>
+              <Pulse delay={s.delay}>
+                <ServiceBox title={s.title} image={s.photo} backgroundColor={s.backgroundColor}>
+                  <div className="mb-0" dangerouslySetInnerHTML={ { __html: s.content } } />
+                </ServiceBox>
+              </Pulse>
+            </Col>
+          ))}
         </Row>
         <Row>
           <Col md={12}>
             <div className="mt-3 text-center">
-              <p className="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! <span role="img" aria-label="wave">👋</span></p>
+              <div className="mb-0" dangerouslySetInnerHTML={ { __html: ServiceConfig.customContent } } />
             </div>
           </Col>
         </Row>
