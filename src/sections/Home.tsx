@@ -1,11 +1,12 @@
 import React from 'react'
-import { Container, Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ParticlesContainer from '../components/ParticlesContainer'
 import TextLoop from 'react-text-loop'
-import Avatar from '../images/avatar.svg'
 import styled from 'styled-components'
 import { Scroller } from '../components'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import details from '../data/details.json'
 
 const Dot = styled.div({
   color: '#ff4c60',
@@ -19,34 +20,34 @@ export class Home extends React.Component {
         <ParticlesContainer />
         <Container>
           <div className="intro">
-            <img src={Avatar} alt="kien dang" className="mb-4" />
+            <img src={details.avatar} alt="kien dang" className="mb-4" />
 
             <h1 className="mb-2 mt-0">
-              kien
-              <Dot>.</Dot>
-              dang
+              {details.firstName}
+              <Dot>{details.middleName}</Dot>
+              {details.lastName}
             </h1>
 
             <span>
               I'm a
               {' '}
               <TextLoop springConfig={{ stiffness: 180, damping: 10 }} interval={2000}>
-                <span>Microsoft .NET developer</span>
-                <span>Front-End developer</span>
-                <span>Data scientist</span>
+                {details.titles.map(t => (<span key={t}>{t}</span>))}
               </TextLoop>
             </span>
 
             <ul className="social-icons light list-inline mb-0 mt-4">
-              <li className="list-inline-item"><a href="https://github.com"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-              <li className="list-inline-item"><a href="https://facebook.com"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
-              <li className="list-inline-item"><a href="https://instagram.com"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></li>
-              <li className="list-inline-item"><a href="https://twitter.com"><FontAwesomeIcon icon={['fab', 'twitter']} /></a></li>
-              <li className="list-inline-item"><a href="https://pinterest.com"><FontAwesomeIcon icon={['fab', 'pinterest']} /></a></li>
+              {details.socialNetworks.map(network => (
+                <li className="list-inline-item" key={network.iconName}>
+                  <a href={network.link} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={fab[network.iconName]} />
+                  </a>
+                </li>
+              ))}
             </ul>
 
             <div className="mt-4">
-              <Button variant="kd">Contact me</Button>
+              <Scroller href="#contact" className="btn btn-kd">Contact me</Scroller>
             </div>
           </div>
           <div className="scroll-down">
