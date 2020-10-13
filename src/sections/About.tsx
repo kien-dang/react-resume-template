@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { Skill, Counter, Section } from '../components'
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core'
 import about from '../data/about.json'
@@ -34,7 +34,8 @@ export class About extends React.Component {
                 <Col md={8}>
                   <div dangerouslySetInnerHTML={ { __html: about.objective } } />
                   <div className="mt-3 mb-3">
-                    <Button variant="kd">Download CV</Button>
+                    {/* <Button variant="kd">Download CV</Button> */}
+                    <a href="https://github.com/kien-dang/react-resume-template" className="btn btn-kd" target="_blank" rel="noopener noreferrer">View on Github</a>
                   </div>
                 </Col>
                 <Col md={4}>

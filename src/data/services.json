@@ -5,14 +5,14 @@
             "title": "UI/UX design",
             "photo": "\/images\/service-1.svg",
             "backgroundColor": "rgb(108, 108, 229)",
-            "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+            "content": "Create better interfaces and experiences for the user, making the web, application's and technology easier for the user.",
             "delay": 0
         },
         {
             "title": "Web Development",
             "photo": "\/images\/service-2.svg",
             "backgroundColor": "rgb(249, 215, 76)",
-            "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+            "content": "Tailor website for search engine optimisation, content organisation, user-friendly site, and effective calls to action.",
             "delay": 1000
         },
         {
