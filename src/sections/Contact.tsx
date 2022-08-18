@@ -4,7 +4,7 @@ import { Row, Col, Button, Form } from 'react-bootstrap'
 import contact from '../data/contact.json'
 
 export class Contact extends React.Component {
-  render () {
+  render() {
     return (
       <Section id="contact" title="Get In Touch">
         <Row>

@@ -9,8 +9,8 @@ const particleStyle = {
 }
 
 export class ParticlesContainer extends React.Component {
-  render () {
-    return (
+  render() {
+    return(
       <>
         <Particles
           style={particleStyle}

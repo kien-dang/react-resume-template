@@ -32,7 +32,7 @@ export class Counter extends React.Component<Props, State> {
     }
   }
 
-  onChange = (isVisible: boolean) => {
+  onChange = (isVisible: boolean): void => {
     if (isVisible && !this.state.loaded) {
       this.setState({
         loaded: true
@@ -40,10 +40,10 @@ export class Counter extends React.Component<Props, State> {
     }
   }
 
-  render () {
+  render() {
     const props = this.props
 
-    return (
+    return(
       <div className={props.className}>
         <div className="fact-item">
           <Box>

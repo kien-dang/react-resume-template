@@ -2,8 +2,7 @@ import React from 'react'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
-
-const Fade = require('react-reveal/Fade')
+import Fade from 'react-reveal/Fade'
 
 interface Props {
   time: string
@@ -13,7 +12,7 @@ interface Props {
 }
 
 export class Timeline extends React.Component<Props> {
-  render () {
+  render() {
     const props = this.props
 
     const IconBox = styled.div({
@@ -27,7 +26,7 @@ export class Timeline extends React.Component<Props> {
       fontWeight: 900
     })
 
-    return (
+    return(
       <div className="timeline-container">
         <Fade bottom>
           <div className="content">

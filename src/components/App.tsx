@@ -6,8 +6,8 @@ import ScrollTopArrow from './ScrollTopArrow'
 import '../components/Icons'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App () {
-  return (
+function App() {
+  return(
     <>
       <Header />
       <main>

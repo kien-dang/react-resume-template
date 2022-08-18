@@ -14,8 +14,8 @@ const Dot = styled.div({
 })
 
 export class Home extends React.Component {
-  render () {
-    return (
+  render() {
+    return(
       <section id="home" className="home d-flex align-items-center">
         <ParticlesContainer />
         <Container>
@@ -28,9 +28,8 @@ export class Home extends React.Component {
               {details.lastName}
             </h1>
 
-            <span>
-              I'm a
-              {' '}
+            <span>              
+              {`I'm a `}
               <TextLoop springConfig={{ stiffness: 180, damping: 10 }} interval={2000}>
                 {details.titles.map(t => (<span key={t}>{t}</span>))}
               </TextLoop>

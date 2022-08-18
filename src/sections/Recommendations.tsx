@@ -9,8 +9,8 @@ import RecommendationConfig from '../data/recommendations.json'
 const recommendations = RecommendationConfig.recommendations
 
 export class Recommendations extends React.Component {
-  render () {
-    let options = {
+  render() {
+    const options = {
       dots: true,
       arrows: false,
       autoplay: true,
@@ -20,7 +20,7 @@ export class Recommendations extends React.Component {
       pauseOnHover: true
     }
 
-    return (
+    return(
       <Section id="recommendations" title="Recommendations">
         <Row>
           <Col md={{ span: 8, offset: 2 }}>
