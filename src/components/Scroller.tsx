@@ -36,7 +36,7 @@ export class Scroller extends React.Component<Props & React.AnchorHTMLAttributes
   }
 
   render() {
-    const { offset, ...rest } = this.props
+    const { ...rest } = this.props
     return(
       <a {...rest} onClick={this.smoothScroll}>
         {this.props.children}

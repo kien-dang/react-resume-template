@@ -5,13 +5,14 @@ interface Props {
   title: string
   backgroundColor: string
   image: string
+  children: React.ReactNode
 }
 
 export class ServiceBox extends React.Component<Props> {
   render() {
     const props = this.props
 
-    const bgColor = props.backgroundColor ? props.backgroundColor : '##342054'
+    const bgColor = props.backgroundColor ? props.backgroundColor : '#342054'
     const Wrapper = styled.div`
       background-color: ${bgColor};
     `

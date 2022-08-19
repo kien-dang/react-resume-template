@@ -13,6 +13,11 @@ const config: webpack.Configuration = {
     filename: "[name].[contenthash].js",
     publicPath: "",
   },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+    hints: false
+  },
   module: {
     rules: [
       {
@@ -31,7 +36,20 @@ const config: webpack.Configuration = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        use: ["style-loader", "css-loader?url=false", "sass-loader"]
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              url: false,
+            },
+          },
+          {
+            loader: "sass-loader",
+          },
+        ],
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
@@ -55,7 +73,9 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./public/favicon.ico",
       template: "src/index.html",
+      manifest: "./public/manifest.json"
     }),
     new ForkTsCheckerWebpackPlugin({
       async: false,

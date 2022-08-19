@@ -13,11 +13,20 @@ const Dot = styled.div({
   display: 'inline'
 })
 
+const particleStyle = {
+  position: 'absolute',
+  width: '100%',
+  height: ' 100vh',
+  top: 0
+} as React.CSSProperties
+
 export class Home extends React.Component {
   render() {
     return(
       <section id="home" className="home d-flex align-items-center">
-        <ParticlesContainer />
+        <div style={particleStyle}>
+          <ParticlesContainer />
+        </div>
         <Container>
           <div className="intro">
             <img src={details.avatar} alt="kien dang" className="mb-4" />

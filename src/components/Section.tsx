@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 interface Props {
   id: string
   title: string
+  children: React.ReactNode
 }
 
 export class Section extends React.Component<Props> {

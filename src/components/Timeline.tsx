@@ -9,6 +9,7 @@ interface Props {
   title: string
   icon: IconProp
   left?: string
+  children: React.ReactNode
 }
 
 export class Timeline extends React.Component<Props> {
