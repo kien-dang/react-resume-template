@@ -4,6 +4,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin"
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin"
 import ESLintPlugin from "eslint-webpack-plugin"
 import { CleanWebpackPlugin } from "clean-webpack-plugin"
+const CopyPlugin = require("copy-webpack-plugin");
 
 const config: webpack.Configuration = {
   mode: "production",
@@ -73,9 +74,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: "./public/favicon.ico",
-      template: "src/index.html",
-      manifest: "./public/manifest.json"
+      template: "src/index.html"
     }),
     new ForkTsCheckerWebpackPlugin({
       async: false,
@@ -84,6 +83,11 @@ const config: webpack.Configuration = {
       extensions: ["js", "jsx", "ts", "tsx"],
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        { from: "public" },
+      ],
+    }),
   ],
 }
 
