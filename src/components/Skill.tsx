@@ -31,12 +31,12 @@ export class Skill extends React.Component<Props, State> {
     }
   }
 
-  render () {
+  render() {
     const props = this.props
 
     const bgColor = props.backgroundColor ? props.backgroundColor : '#f1f1f1'
 
-    return (
+    return(
       <div className="skill-item mb-4">
         <VisibilitySensor onChange={this.onChange}>
           <div className="skill-info clearfix">

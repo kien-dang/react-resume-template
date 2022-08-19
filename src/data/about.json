@@ -1,6 +1,6 @@
 {
   "username": "kien dang",
-  "avatar": "\/images\/avatar-primary-bg.svg",
+  "avatar": "../assets/images/avatar-primary-bg.svg",
   "objective": "<p>I am a Microsoft .NET developer with more than 5 years of experience in developing, testing, and implementing webservices, microservices and web-based applications using Microsoft technologies, MS SQL Server, scheduled tasks, TFS and Azure services. <\/p> <p> I am ambitious and hardworking, innovative and creative, very flexible and adaptable. I am also a quick learner and master new technologies with ease; reliable team player as well as an independent individual. <\/p>",
   "resumeUrl": "#",
   "skills": [

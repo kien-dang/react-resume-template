@@ -18,8 +18,8 @@ const Dot = styled.span({
 })
 
 export class Header extends React.Component {
-  render () {
-    return (
+  render() {
+    return(
       <header className="kd-header fixed-top">
         <Container>
           <Navbar expand="lg" variant="dark">

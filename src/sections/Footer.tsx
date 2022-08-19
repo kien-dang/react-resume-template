@@ -8,8 +8,8 @@ const StyledFooter = styled.footer({
 })
 
 export class Footer extends React.Component {
-  render () {
-    return (
+  render() {
+    return(
       <StyledFooter className="footer">
         <Container>
           <span className="copyright">© {(new Date()).getFullYear()} {about.username}.</span>

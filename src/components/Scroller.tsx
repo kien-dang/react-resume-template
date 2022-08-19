@@ -6,7 +6,7 @@ interface Props {
 }
 
 export class Scroller extends React.Component<Props & React.AnchorHTMLAttributes<HTMLAnchorElement>> {
-  componentDidMount () {
+  componentDidMount() {
     smoothScroll.polyfill()
   }
 
@@ -35,9 +35,9 @@ export class Scroller extends React.Component<Props & React.AnchorHTMLAttributes
     }
   }
 
-  render () {
-    const { offset, ...rest } = this.props
-    return (
+  render() {
+    const { ...rest } = this.props
+    return(
       <a {...rest} onClick={this.smoothScroll}>
         {this.props.children}
       </a>

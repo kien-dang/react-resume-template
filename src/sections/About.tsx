@@ -10,7 +10,7 @@ const Name = styled.div`
   font-size: 18px;
 `
 export class About extends React.Component {
-  render () {
+  render() {
     return (
       <Section id="about" title="About Me">
         <Row>
@@ -18,7 +18,8 @@ export class About extends React.Component {
             <Row>
               <Col md={12}>
                 <div className="text-center mb-3">
-                  <img src={about.avatar} alt="kiendang" style={{ width: '150px' }} />
+                  {/* <img src={about.avatar} alt="kiendang" style={{ width: '150px' }} /> https://www.npmjs.com/package/copy-webpack-plugin */}
+                  <img src={require('../assets/images/avatar-primary-bg.svg')} alt="kiendang" style={{ width: '150px' }} />
                 </div>
               </Col>
               <Col md={12}>

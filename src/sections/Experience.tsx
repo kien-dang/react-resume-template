@@ -6,9 +6,9 @@ import history from '../data/history.json'
 const career = history.career
 
 export class Experience extends React.Component {
-  render () {
+  render() {
 
-    return (
+    return(
       <Section id="experience" title="Experience">
         <Row>
           <Col md={12}>

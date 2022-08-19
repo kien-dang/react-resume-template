@@ -2,14 +2,13 @@ import React from 'react'
 import { Section, ServiceBox } from '../components'
 import { Row, Col } from 'react-bootstrap'
 import ServiceConfig from '../data/services.json'
+import Pulse from 'react-reveal/Pulse'
 
 const services = ServiceConfig.services
 
-const Pulse = require('react-reveal/Pulse')
-
 export class Services extends React.Component {
-  render () {
-    return (
+  render() {
+    return(
       <Section id="services" title="Services">
         <Row>
           { services.map(s => (
