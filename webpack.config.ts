@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin"
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin"
 import ESLintPlugin from "eslint-webpack-plugin"
 import { CleanWebpackPlugin } from "clean-webpack-plugin"
-const CopyPlugin = require("copy-webpack-plugin");
+import CopyPlugin from "copy-webpack-plugin"
 
 const config: webpack.Configuration = {
   mode: "production",

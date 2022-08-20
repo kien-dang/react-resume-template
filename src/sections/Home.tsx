@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ParticlesContainer from '../components/ParticlesContainer'
+import { ParticlesContainer } from '../components/ParticlesContainer'
 import TextLoop from 'react-text-loop'
 import styled from 'styled-components'
 import { Scroller } from '../components'
@@ -13,18 +13,11 @@ const Dot = styled.div({
   display: 'inline'
 })
 
-const particleStyle = {
-  position: 'absolute',
-  width: '100%',
-  height: ' 100vh',
-  top: 0
-} as React.CSSProperties
-
 export class Home extends React.Component {
   render() {
     return(
       <section id="home" className="home d-flex align-items-center">
-        <div style={particleStyle}>
+        <div>
           <ParticlesContainer />
         </div>
         <Container>
