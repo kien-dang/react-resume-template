@@ -19,11 +19,11 @@ const Dot = styled.span({
 
 export class Header extends React.Component {
   render() {
-    return(
+    return (
       <header className="kd-header fixed-top">
-        <Container>
-          <Navbar expand="lg" variant="dark">
-            <Navbar.Brand href="#">
+        <Navbar expand="lg" variant="dark">
+          <Container>
+            <Navbar.Brand href="#home">
               <Logo>
                 {details.firstName}
                 <Dot>{details.middleName}</Dot>
@@ -32,7 +32,7 @@ export class Header extends React.Component {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarNavDropdown" />
             <Navbar.Collapse id="navbarNavDropdown">
-              <Nav className="ml-auto" as="ul">
+              <Nav className="ms-auto" as="ul">
                 <Nav.Item as="li">
                   <Scroller href="#home" className="nav-link">Home</Scroller>
                 </Nav.Item>
@@ -50,8 +50,8 @@ export class Header extends React.Component {
                 </Nav.Item>
               </Nav>
             </Navbar.Collapse>
-          </Navbar>
-        </Container>
+          </Container>
+        </Navbar>
       </header>
     )
   }

@@ -40,8 +40,8 @@ export class Skill extends React.Component<Props, State> {
       <div className="skill-item mb-4">
         <VisibilitySensor onChange={this.onChange}>
           <div className="skill-info clearfix">
-            <h4 className="float-left mb-3 mt-0">{props.title}</h4>
-            <span className="float-right">{`${props.percent}%`}</span>
+            <h4 className="float-start mb-3 mt-0">{props.title}</h4>
+            <span className="float-end">{`${props.percent}%`}</span>
           </div>
         </VisibilitySensor>
         <div className="progress">

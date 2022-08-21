@@ -3,6 +3,9 @@
   Author: Kien Dang
   Version: 0.0.1
 */
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
 
 /* BASE - Base style, mixins, variables, etc */
 @import 'base/variables';

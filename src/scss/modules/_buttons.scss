@@ -38,6 +38,7 @@
 .btn-kd {
   color: $color-white;
   background: $color-primary;
+  border: none;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -46,6 +47,7 @@
 
   &:hover {
     color: $color-white;
+    background: $color-primary;
     animation-name: button-push;
     animation-duration: 0.3s;
     animation-timing-function: linear;

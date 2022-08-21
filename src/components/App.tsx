@@ -4,7 +4,6 @@ import { Row, Col, Container } from 'react-bootstrap'
 import ScrollTopArrow from './ScrollTopArrow'
 
 import '../components/Icons'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return(

@@ -52,10 +52,10 @@ export class ParticlesContainer extends React.Component {
             },
             particles: {
               color: {
-                value: "#ffffff"
+                value: '#ffffff'
               },
               links: {
-                color: "#ffffff",
+                color: '#ffffff',
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -65,10 +65,10 @@ export class ParticlesContainer extends React.Component {
                 enable: true
               },
               move: {
-                direction: "none",
+                direction: 'none',
                 enable: true,
                 outModes: {
-                  default: "bounce"
+                  default: 'bounce'
                 },
                 random: false,
                 speed: 1,
@@ -85,7 +85,7 @@ export class ParticlesContainer extends React.Component {
                 value: 0.5
               },
               shape: {
-                type: "circle"
+                type: 'circle'
               },
               size: {
                 random: true,

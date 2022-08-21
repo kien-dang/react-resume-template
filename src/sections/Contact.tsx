@@ -17,27 +17,27 @@ export class Contact extends React.Component {
           <Col md={8}>
             <Row>
               <Col md={6}>
-                <Form.Group controlId="inputName">
+                <Form.Group className="mb-4" controlId="inputName">
                   <Form.Control type="text" className="kd-form-control" placeholder="Your name" />
                 </Form.Group>
               </Col>
               <Col md={6}>
-                <Form.Group controlId="inputEmail">
+                <Form.Group className="mb-4" controlId="inputEmail">
                   <Form.Control type="email" className="kd-form-control" placeholder="Email address" />
                 </Form.Group>
               </Col>
             </Row>
             <Row>
               <Col md={12}>
-                <Form.Group controlId="inputSubject">
+                <Form.Group className="mb-4" controlId="inputSubject">
                   <Form.Control type="text" className="kd-form-control" placeholder="Subject" />
                 </Form.Group>
               </Col>
             </Row>
             <Row>
               <Col md={12}>
-                <Form.Group controlId="inputMessage">
-                  <Form.Control as="textarea" rows={5} className="kd-form-control" placeholder="Message" />
+                <Form.Group className="mb-4" controlId="inputMessage">
+                  <Form.Control as="textarea" className="kd-form-control" placeholder="Message" style={{ height: '150px' }} />
                 </Form.Group>
               </Col>
             </Row>

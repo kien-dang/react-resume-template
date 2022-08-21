@@ -29,13 +29,16 @@ a {
   color: $color-primary;
   outline: 0;
   transition: all 0.3s ease-in-out;
-}
-a:hover {
-  color: $color-dark;
   text-decoration: none;
-}
-a:focus {
-  outline: 0;
+
+  &:hover {
+    color: $color-dark;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 blockquote {
